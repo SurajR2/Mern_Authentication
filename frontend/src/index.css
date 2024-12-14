@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: "Sawer";
@@ -11,34 +10,16 @@
 
 @layer base {
   :root {
-    --text: #333333; /* Light text */
-    --background: #ededed; /* Light background */
-    --primary: #007bff; /* Primary blue */
-    --secondary: #6d767e; /* Secondary gray */
-    --accent: #ffc105; /* Accent yellow */
-
-    /* Suggested contrasting colors */
-    --text-contrast: #ffffff; /* White for background */
-    --background-contrast: #1a1a1a; /* Dark gray for text on background */
-    --primary-contrast: #0056a1; /* Darker blue for primary */
-    --secondary-contrast: #4a4e52; /* Darker gray for secondary */
-    --accent-contrast: #a15d00; /* Deep amber for accent */
-  } /* Dark Mode */
-
-  .dark {
-    --text: #cccccc; /* Light text */
-    --background: #121212; /* Dark background */
-    --primary: #007bff; /* Primary blue */
-    --secondary: #818a92; /* Secondary gray */
-    --accent: #fabb00; /* Accent yellow */
-
-    /* Suggested contrasting colors */
-    --text-contrast: #121212; /* Black for text on background */
-    --background-contrast: #ffffff; /* White for background */
-    --primary-contrast: #6cbaff; /* Light blue for primary */
-    --secondary-contrast: #a9b2ba; /* Light gray for secondary */
-    --accent-contrast: #ffe580; /* Soft yellow for accent */
+    --primary: #6c47c8; /* Vibrant Purple */
+    --primary-hover: #5b3baa;
+    --secondary: #72b5f9; /* Soft Blue */
+    --secondary-hover: #5a9fdb;
+    --text-contrast: #ffffff; /* White Text */
+    --dark-text-contrast: #d1d5db; /* Softer White */
+    --background: #f8fafc; /* Light Background */
+    --dark-background: #1a202c; /* Dark Mode Background */
   }
+
   .font-outline-1 {
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: transparent;

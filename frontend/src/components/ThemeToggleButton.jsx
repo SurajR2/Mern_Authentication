@@ -17,12 +17,12 @@ const ThemeToggleButton = () => {
     if (isSmallDevice) {
       return theme === "light" ? (
         <MdOutlineLightMode
-          className="absolute text-text-contrast opacity-100 dark:opacity-0 transition-opacity duration-300"
+          className="absolute  opacity-100 dark:opacity-0 transition-opacity duration-300"
           size={20}
         />
       ) : (
         <MdOutlineDarkMode
-          className="absolute text-gray-800 opacity-0 dark:opacity-100 transition-opacity duration-300"
+          className="absolute  opacity-0 dark:opacity-100 transition-opacity duration-300"
           size={20}
         />
       );
@@ -31,11 +31,11 @@ const ThemeToggleButton = () => {
     return (
       <>
         <MdOutlineLightMode
-          className="absolute left-2 text-text-contrast opacity-100 dark:opacity-0 transition-opacity duration-300"
+          className="absolute left-2  opacity-100 dark:opacity-0 transition-opacity duration-300"
           size={20}
         />
         <MdOutlineDarkMode
-          className="absolute right-2 text-gray-800 opacity-0 dark:opacity-100 transition-opacity duration-300"
+          className="absolute right-2 opacity-0 dark:opacity-100 transition-opacity duration-300"
           size={20}
         />
         <motion.div

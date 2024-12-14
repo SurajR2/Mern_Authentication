@@ -1,22 +1,31 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../axios/axios.instance";
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex flex-col justify-center items-center md:w-screen text-text dark:text-text flex-wrap p-4 gap-10 ">
-      <p className="flex flex-col gap-6 text-center text-5xl font-bold font-kaisei">
+    <div className="flex flex-col justify-center items-center md:w-screen flex-wrap p-6 gap-10 bg-background dark:bg-dark-background text-black dark:text-dark-text-contrast">
+      <p className="flex flex-col gap-6 text-center text-4xl font-bold font-sans">
         Simple & Functional <br />
-        <p>
-          <span className="text-accent-contrast font-bold font-sawer font-outline-4 text-8xl italic">
+        <span>
+          <span className="text-primary dark:text-secondary font-extrabold text-7xl italic">
             MERN
           </span>
           <span> Auth Demo</span>
-        </p>
+        </span>
       </p>
-      <div className="flex flex-col md:flex-row gap-4 sm:flex-wrap justify-center items-center ">
-        <button className="w-max p-3 bg-secondary hover:bg-secondary-contrast text-text-contrast dark:text-text rounded-xl">
+      <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <button
+          className="w-max px-6 py-3 bg-secondary hover:bg-secondary-hover text-text-contrast rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
+          onClick={() => navigate("/login")}
+        >
           Already have an Account?
         </button>
-        <button className="w-max p-3 bg-accent-contrast hover:bg-accent text-text-contrast dark:text-text-contrast rounded-xl">
+        <button
+          className="w-max px-6 py-3 bg-primary hover:bg-primary-hover text-text-contrast rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95"
+          onClick={() => navigate("/signup")}
+        >
           Sign Up!
         </button>
       </div>
