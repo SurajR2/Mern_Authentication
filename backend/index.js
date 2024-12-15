@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://auth.surajrasaili.com.np", // Frontend URL
     credentials: true, // Allow credentials (cookies)
     allowedHeaders: [
       "set-cookie",
