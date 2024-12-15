@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
       console.error("Authentication failed:", error.message);
       setUser(null);
       setIsAuthenticated(false);
-      navigate("/login");
+      navigate("/");
       return error.response;
     } finally {
       setIsLoading(false);
